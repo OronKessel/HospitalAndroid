@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorMainLight">#81DCFE</color>
+    <color name="colorMain">#21C1FE</color>
+    <color name="colorWelcomeContent">#88ffffff</color>
+    <color name="colorMainStroke">#82EBFD</color>
+    <color name="colorGray">#cccccc</color>
+    <color name="colorText">#313534</color>
+    <color name="color_text">#2E3C52</color>
+    <color name="ldrawer_color">#FFFFFF</color>
+    <color name="topbar">#2E3C52</color>
+
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/editInviteFirstName"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:textCursorDrawable="@drawable/drawable_cursor"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#0000FF"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="1dp"></LinearLayout>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:text="First Name"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/editInviteLastName"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:textCursorDrawable="@drawable/drawable_cursor"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#0000FF"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="1dp"></LinearLayout>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:text="Last Name"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content" />
+
+
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/editInviteEmail"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:textCursorDrawable="@drawable/drawable_cursor"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#0000FF"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="1dp"></LinearLayout>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:text="Enter Email"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/editInvitePhone"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:textCursorDrawable="@drawable/drawable_cursor"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:background="#0000FF"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="1dp"></LinearLayout>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:text="Mobile Number"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:id="@+id/layoutInviteConfirm"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/imgInviteConfirm"
+                android:src="@drawable/ic_tick_2"
+                android:padding="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:text="Please confirm all information is correct"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_marginBottom="5dp"
+            android:layout_height="1dp"></LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

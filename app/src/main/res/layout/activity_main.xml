@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:id="@+id/txtScreenTitle"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:text=""
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:background="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="1dp"></LinearLayout>
+            </RelativeLayout>
+            <FrameLayout
+                android:id="@+id/frameHome"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/layoutMainBottomBar"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="PoM is a service to help keep family and friends informed and updated on hospital visits. Let's get started!"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:text="All rights reserved. Designed and developed by eHealth Connect LLC"
+                    android:textColor="@color/colorText"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPatientBottomBarLine"
+                android:layout_width="match_parent"
+                android:background="#41C7DB"
+                android:orientation="vertical"
+                android:layout_height="2dp">
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutPatientBottomBar"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                
+                <RelativeLayout
+                    android:id="@+id/relPatientBottomHome"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Home"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:id="@+id/linPatientBottomHome"
+                        android:layout_width="match_parent"
+                        android:background="#41C7DB"
+                        android:orientation="vertical"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="4dp">
+
+                    </LinearLayout>
+                    
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relPatientBottomBlast"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Blast Message"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:id="@+id/linPatientBottomBlast"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:background="#41C7DB"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="4dp">
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relPatientBottomHistory"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Visit History"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:id="@+id/linPatientBottomHistory"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:background="#41C7DB"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="4dp">
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relPatientBottomOption"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Options"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:id="@+id/linPatientBottomOption"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:background="#41C7DB"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="4dp">
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutMemberBottomBarLine"
+                android:layout_width="match_parent"
+                android:background="#41C7DB"
+                android:orientation="vertical"
+                android:layout_height="1dp">
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutMemberBottomBar"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:id="@+id/relMemberBottomHome"
+                    android:background="@drawable/drawable_bottom_tab"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Home"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:id="@+id/linMemberBottomHome"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:background="#41C7DB"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="4dp">
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relMemberBottomBlast"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawable_bottom_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Select Patient"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:id="@+id/linMemberBottomBlast"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:background="#41C7DB"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="4dp">
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relMemberBottomHistory"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Invites"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:id="@+id/linMemberBottomHistory"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:background="#41C7DB"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="4dp">
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relMemberBottomOption"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Options"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:id="@+id/linMemberBottomOption"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:background="#41C7DB"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="4dp">
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:id="@+id/relOptionMemberPatient"
+            android:layout_width="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:background="#00000000"
+                android:orientation="vertical"
+                android:id="@+id/layoutMemberPatientMask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutMemberPatientMenu"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="100dp"
+                android:layout_width="150dp"
+                android:orientation="vertical"
+                android:background="#ee3399CC"
+                android:minHeight="80dp"
+                android:layout_height="wrap_content">
+                <ListView
+                    android:id="@+id/listMemberPatients"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:id="@+id/relOptionMemberMenu"
+            android:layout_width="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:background="#00000000"
+                android:orientation="vertical"
+                android:id="@+id/layoutMemberOptionMask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutMemberOptionMenu"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:background="#ee3399CC"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/btnMemberOptionPatient"
+                    android:layout_width="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/drawable_btn_option"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:text="I'm a Patient"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#00CCFF"
+                    android:layout_height="1dp"></LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/btnMemberOptionProfile"
+                    android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:background="@drawable/drawable_btn_option"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:text="Profile"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#00CCFF"
+                    android:layout_height="1dp"></LinearLayout>
+                <TextView
+                    android:id="@+id/btnMemberOptionChangePassword"
+                    android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="@drawable/drawable_btn_option"
+                    android:textStyle="bold"
+                    android:layout_height="40dp"
+                    android:text="Change Password"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#00CCFF"
+                    android:layout_height="1dp"></LinearLayout>
+                <TextView
+                    android:id="@+id/btnMemberOptionLogout"
+                    android:layout_width="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="@drawable/drawable_btn_option"
+                    android:layout_margin="0dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:text="Logout"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:id="@+id/relOptionMenu"
+            android:layout_width="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:background="#00000000"
+                android:orientation="vertical"
+                android:id="@+id/layoutOptionMask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutOptionMenu"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:background="#ee3399CC"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/btnOptionPatient"
+                    android:layout_width="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/drawable_btn_option"
+                    android:textStyle="bold"
+                    android:layout_height="43dp"
+                    android:text="I'm a Member"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#00CCFF"
+                    android:layout_height="1dp"></LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/btnOptionProfile"
+                    android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:background="@drawable/drawable_btn_option"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"
+                    android:layout_height="43dp"
+                    android:text="Profile"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#00CCFF"
+                    android:layout_height="1dp"></LinearLayout>
+                <TextView
+                    android:id="@+id/btnOptionChangePassword"
+                    android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:paddingRight="20dp"
+                    android:background="@drawable/drawable_btn_option"
+                    android:layout_height="43dp"
+                    android:text="Change Password"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#00CCFF"
+                    android:layout_height="1dp"></LinearLayout>
+                <TextView
+                    android:id="@+id/btnOptionLogout"
+                    android:layout_width="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="@drawable/drawable_btn_option"
+                    android:textStyle="bold"
+                    android:layout_margin="0dp"
+                    android:layout_height="43dp"
+                    android:text="Logout"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:id="@+id/relBlastMenu"
+            android:layout_width="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:background="#00000000"
+                android:orientation="vertical"
+                android:id="@+id/layoutBlastMask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutBlastParent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#f0CEDEED"
+                android:layout_height="wrap_content">
+
+                <com.androidbuts.multispinnerfilter.MultiSpinner
+                    android:id="@+id/spBlastContact"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/drawable_stroke"
+                    android:layout_height="40dp"/>
+
+                <EditText
+                    android:id="@+id/editBlastMessage"
+                    android:hint="Message"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/drawable_stroke"
+                    android:layout_width="match_parent"
+                    android:minHeight="170dp"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/drawable_cursor"
+                    android:gravity="top|left"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/imgBlastSend"
+                    android:layout_width="35dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_send1"
+                    android:layout_height="35dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

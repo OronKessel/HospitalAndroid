@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_service_item_member"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:text="Service Items"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/drawabel_welcome_title"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/drawable_welcome_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/layout_invite_service_selectall"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="40dp">
+                <ImageView
+                    android:id="@+id/img_select_all_service"
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_tick_1"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:text="Select All"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_invite_service"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

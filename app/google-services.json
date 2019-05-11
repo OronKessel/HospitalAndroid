@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "840846699873",
+    "firebase_url": "https://pomhospital-dbcc0.firebaseio.com",
+    "project_id": "pomhospital-dbcc0",
+    "storage_bucket": "pomhospital-dbcc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840846699873:android:70f217528329a8a8",
+        "android_client_info": {
+          "package_name": "com.songu.pom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840846699873-f2u9v0oiss8gad9atfvheja439i4ancg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.songu.pom",
+            "certificate_hash": "14cf422980953efc8474573123f125695beb0498"
+          }
+        },
+        {
+          "client_id": "840846699873-tse7hosf1f21otrgcma451mi47uf1bb7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGfDZO-gm0S6IcYoNyuAMt34YoJW2sN4M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840846699873-tse7hosf1f21otrgcma451mi47uf1bb7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

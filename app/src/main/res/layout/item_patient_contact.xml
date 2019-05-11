@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="56dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="28dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="Email:"
+                android:textSize="20dp"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/txt_item_contact_email"
+                android:layout_marginLeft="10dp"
+                android:text="tenstar@mgail.com"
+                android:textSize="20dp"
+                android:textColor="@color/colorText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="28dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="Phone:"
+                android:textSize="20dp"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/txt_item_contact_phone"
+                android:layout_marginLeft="10dp"
+                android:text="tenstar@mgail.com"
+                android:textSize="20dp"
+                android:textColor="@color/colorText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

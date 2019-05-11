@@ -1,0 +1,32 @@
+package com.songu.pom.doc;
+
+/**
+ * Created by Administrator on 1/12/2018.
+ */
+
+public class Enums {
+
+    public static enum MODE
+    {
+        MENULOGIN,CONSENT,FORGETPASSWORD,RESETPASSWORD,
+        PATIENT_HOME,PATIENT_BLAST,PATIENT_VISIT,PATIENT_OPTION,PATIENT_INVITE,PATIENT_SELECT_SERVICE,PATIENT_CHANGE_PASSWORD,PATIENT_PROFILE,PATIENT_CHANGE_SERVICE,
+        MEMBER_HOME,MEMBER_PATIENT,MEMBER_INVITE,MEMBER_SETTING,MEMBER_PROFILE,MEMBER_CHANGE_PASSWORD,MEMBER_DETAIL,MEMBER_PATIENT_UPDATE
+
+    }
+
+    public static enum USERTYPE
+    {
+        NONE,PATIENT,USER
+    }
+
+    public static enum LOGINTYPE
+    {
+        NONE,EXIST,NEW
+    }
+
+    public static enum SWIPDIRECTION
+    {
+        LEFT,RIGHT
+    }
+
+}

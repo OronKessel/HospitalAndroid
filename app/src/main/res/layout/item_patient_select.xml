@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layoutMemberOptionMenu"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#803399CC"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtSelectPatientName"
+            android:layout_width="match_parent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/drawable_btn_option"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:text="I'm a Patient"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#00CCFF"
+            android:layout_height="1dp"></LinearLayout>
+    </LinearLayout>
+</LinearLayout>

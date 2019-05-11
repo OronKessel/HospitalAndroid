@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">POM</string>
+    <string name="crash_report">Crash</string>
+    <string name="patient_welcome_content">PoM is  a service to help keep your family and friends  informed on your upcoming visit with Hospital X. Let\'s help your loved ones feel connected with you  and well informed!</string>
+    <string name="patient_confirm_content">In order to update your family and friends PoM will need to share some of your visit information. PoM will store your visit information for the duration of your visit. Your information will be received from the hospital or institution you are visiting. If you agree to take part in this service, we will work with the hospital or institution to setup the technology needed to gather and protect your information. Once the data is received, the hospital or institution is not responsible or liable for the management or protection of the data. Your data will not be identifiable outside of our database. Information being sent to family and friends will be stripped of identifiers such as name, address or account number, so that it protects you from stolen mobile phones or unauthorized data capture on mobile phones. PoM is using strict security standards (HITRUST &amp; HIPAA) to safeguard your information for the duration of your visit. You will have control of what type of information is shared and with whom to share it with.  \n\n Shall we proceed?</string>
+    <string name="patient_congrate_content">Thanks! You are all Set! Your contacts will now receive a notification that you invited them to get your visit updates. Once you check in to your visit, your family and friends will receive updated automatically. Have a good day!</string>
+
+    <string-array name="question_array">
+        <item>What is your name?</item>
+        <item>What is your pet dog name?</item>
+        <item>What is your favourite football team?</item>
+    </string-array>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+</resources>
